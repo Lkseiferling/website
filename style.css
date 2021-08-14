@@ -1,0 +1,282 @@
+h1 {
+color:#C4B946;
+font-family: 'Merriweather', serif;
+letter-spacing: 3px;
+text-align: center;
+margin-top: 70px;
+margin-bottom: 60px;
+font-size: 40px;
+}
+
+h2 {
+    color: #0C373C;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+h4 {
+color:#0C373C;
+font-family: 'Merriweather', serif;
+letter-spacing: 3px;
+text-align:center;
+font-size: 20px;
+}
+
+h3 {
+color:#0C373C;
+font-family: 'Merriweather', serif;
+text-align: center;
+letter-spacing: 3px;}
+
+p {
+    text-align: center;
+    
+}
+
+body {
+    letter-spacing: 1px;
+    color: #4A4C4D;
+    font-family:Arial;
+    font-size: 14;
+    /* background-color:F7F7F7; */
+    margin-left:300px;
+    margin-right:300px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+    overflow: hidden;
+    background-color: #F7F7F7;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 9999; /*makes things go in the background of the menu*/
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    /*applies this style only to hyperlink (anchor) inside list items (li)*/
+    display: block;
+    color: #DBD3BE;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;    
+}
+
+li a:hover {
+    /*field changes color when mouse is moved over it*/
+    background-color:#E4E5DF;
+}
+
+li a:active{
+    /*field changes color when being clicked on but does not stay*/
+        background-color: #F8F9CA;
+}
+
+li:first-child{
+    /*style will be applied only for the first list item; if I wanted to apply only to first anchor overall it would be a:first, first anchor in each list item it would be li a:first, paragraph p a:first, etc.*/
+    margin-left:300px;
+}
+
+.current{
+    /*class for style that stays for each field/text when being clicked on in menu*/
+    color:#0C373C;
+    background-color:#E4E5DF;
+}
+
+.cropped1{
+    /*headshot square*/
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: 20% 10%;
+    /*rounds corners*/
+    border-radius: 50%; 
+    /*centers image*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cropped2{
+    /*headshot square*/
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: 20% 10%;
+    /*rounds corners*/
+    border-radius: 50%;
+}
+
+.center{
+    margin: auto;
+    width: 70%; /*depending on size of display will only show image block on 50% of the screen*/
+    /*display: block;*/
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+/*    text-align: center;*/
+    color: #F7F7F7;
+/*    float: left;*/
+    margin: 10px; 
+}
+
+.text-on-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.button1{
+    background-color: #F7F7F7;
+    color: #DBD3BE;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display:inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1:hover{
+    background-color:#E4E5DF;
+}
+
+.button1:active{
+    color: #0C373C;
+    background-color: #F8F9CA;
+    font-size: 16px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display:inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+.blue {
+    color: aqua;
+}
+
+/*Slideshow for Homepage*/
+
+/*Slideshow Container*/
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+  }
+
+/* Hide the images by default */
+/*.mySlides {
+    display: none;
+  }*/
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+/* Caption text */
+.text {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+/* Number text (1/2 etc) */
+.numbertext {
+    color: #4A4C4D;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-family: arial;
+  }
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.active, .dot:hover {
+    background-color: #717171;
+  }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.0s;
+    animation-name: fade;
+    animation-duration: 1.0s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*p {background-color:#F7F7F7;} /*
+/*only edit one image with ID /*
